@@ -1,0 +1,72 @@
+######################################################################
+# Name:     plot_style_ppth.mplstyle
+# Author:   A. Marocchino
+# Date:		2018-12-05
+# Purpose:  This is a matplotlib DARK style, mocking up Julia Lang dark style 
+# Source:   python
+#####################################################################
+
+#####################################################################
+# To use it add these line commands to your python.startup file or to your file
+# plt.style.use(os.path.join(os.path.expanduser('~'),'Codes','Python_general_controllers','python_plot','plot_style_ppth.mplstyle'))
+#####################################################################
+
+
+
+### LINES
+# See http://matplotlib.org/api/artist_api.html#module-matplotlib.lines for more
+# information on line properties.
+lines.linewidth   : 1.0     # line width in points
+
+
+
+### FIGURE
+# See http://matplotlib.org/api/figure_api.html#matplotlib.figure.Figure
+figure.titlesize : medium       # size of the figure title
+figure.titleweight : normal     # weight of the figure title
+figure.figsize   : 3.25, 3.00    # figure size in inches
+figure.facecolor   : (0.2,0.2,0.2)       # axes background color
+figure.edgecolor : w            # figure edgecolor
+figure.autolayout : False        # When True, automatically adjust subplot
+                                # parameters to make the plot fit the figure
+# figure.forward    : True
+figure.dpi       : 100        ## figure dots per inch
+
+
+
+### SUBPLOT
+axes.facecolor : (0.2,0.2,0.2) #force the subplot to have the same plot colour
+
+
+
+###--- TICKS ---###
+# see http://matplotlib.org/api/axis_api.html#matplotlib.axis.Tick
+
+xtick.major.size     : 4      # major tick size in points
+xtick.color          : w      # color of the tick labels
+xtick.labelsize      : medium # fontsize of the tick labels
+xtick.top            : True   # draw ticks on the top side
+xtick.bottom         : True   # draw ticks on the bottom side
+
+
+ytick.major.size     : 4      # major tick size in points
+ytick.color          : w      # color of the tick labels
+ytick.labelsize      : medium # fontsize of the tick labels
+ytick.left           : True   # draw ticks on the left side
+ytick.right          : True   # draw ticks on the right side
+
+
+
+###--- FONT ---###
+font.size           : 8.0
+font.family         : serif
+
+###--- SUBPLOT ADJUST ---###
+figure.subplot.left    : 0.19   # the left side of the subplots of the figure
+figure.subplot.right   : 0.9    # the right side of the subplots of the figure
+figure.subplot.bottom  : 0.17   # the bottom of the subplots of the figure
+figure.subplot.top     : 0.95   # the top of the subplots of the figure
+figure.subplot.wspace  : 0.2    # the amount of width reserved for blank space between subplots,
+                                # expressed as a fraction of the average axis width
+figure.subplot.hspace  : 0.2    # the amount of height reserved for white space between subplots,
+                                # expressed as a fraction of the average axis height
